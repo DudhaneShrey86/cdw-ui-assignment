@@ -1,0 +1,42 @@
+@import './variables';
+
+#navbar {
+  background-color: $blue;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .search-div {
+    position: relative;
+
+    .searchicon {
+      position: absolute;
+      font-size: 1.35rem;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $text-color;
+    }
+
+    .searchbar {
+      padding: 8px 16px 8px 40px;
+      border-radius: 20px;
+      border: 1px solid $background-grey;
+      outline: none;
+      font-family: unset;
+      min-width: 350px;
+      &::placeholder {
+        color: $text-muted;
+        font-weight: 500;
+      }
+    }
+  }
+}
